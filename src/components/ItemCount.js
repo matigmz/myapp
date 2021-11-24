@@ -10,8 +10,6 @@ const ItemCount = ({initialValue, stock, onAdd}) => {
     const suma = () => {
         setContador(contador + 1);
     };
-    
-    if ( contador <= stock) { setcontador(contador - 1) };
 
     return (
         <div>
@@ -22,7 +20,7 @@ const ItemCount = ({initialValue, stock, onAdd}) => {
             <button className="btn btn-light" onClick={onAdd}>Agregar al carrito</button>
         </div>
     );
-    if (contador< stock) {setContador(contador + 1)};
+
 };
 
 export default ItemCount;
