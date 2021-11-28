@@ -1,11 +1,9 @@
 import React from 'react'
 
-const ItemList = () => {
+export default function HomePage() {
     return (
         <div>
-            
+            <h1></h1>
         </div>
     )
 }
-
-export default ItemList

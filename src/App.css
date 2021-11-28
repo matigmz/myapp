@@ -31,15 +31,15 @@
 .navbar-brand{ margin-right: 40%;
 }
 .iconCart{
-  margin-left: 800px;
+  margin-left: 700px;
   width: 30px; height: 30px;
 }
 .listContainer{margin-top: 35px;}
 
-
 .btn-dark {width: 40px; height: 40px;
   margin:10px;}
-  .btn-light{margin: 5px;}
+.btn-light{margin: 5px;}
+
 /*Fin Mi Css*/
 
 @keyframes App-logo-spin {

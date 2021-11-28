@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import CartWidget from './CartWidget'
 
 const navBar = () => {
@@ -12,13 +14,13 @@ const navBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                <button className="btn btn-light">Inicio</button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Productos</a>
+              <button className="btn btn-light">Productos</button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#"><CartWidget/></a>
+              <button className="btn btn-light"><CartWidget/></button>
               </li>
               
             </ul>

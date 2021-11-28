@@ -1,12 +1,20 @@
-import React from 'react'
-import ItemCount from '../components/ItemCount';
+import React, {useEffect, useState} from 'react';
+import ItemList from '../components/ItemList/ItemList';
 
-function ItemListContainer() {
-    return(
-    <div><h4 className="listContainer">
-        Proximamente catalogo</h4>
-        <ItemCount initialValue={1} stock={20}/>
-    </div> );
-};
 
-export default ItemListContainer;
+const ItemListContainer = () => {
+
+ const [products, setProducts] = useState([]);
+
+ useEffect(()=>{
+    fetch('http://localhost:3000/notebooks')
+    .then(response => response.json())
+    .then(productsResponse => setProducts(productsResponse))
+  }, [])
+
+  return(
+     <ItemList products = {products}/>
+  )
+}
+
+export default ItemListContainer

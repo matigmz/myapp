@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Item = () => {
+export default function ProductsPage() {
     return (
         <div>
-            
+            <h1>productos</h1>
         </div>
     )
 }
-
-export default Item
