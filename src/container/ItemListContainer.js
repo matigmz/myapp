@@ -6,7 +6,7 @@ const ItemListContainer = () => {
 
  const [products, setProducts] = useState([]);
 
- useEffect(()=>{
+ useEffect( () => {
     fetch('http://localhost:3000/notebooks')
     .then(response => response.json())
     .then(productsResponse => setProducts(productsResponse))
