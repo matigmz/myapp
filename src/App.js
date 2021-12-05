@@ -2,28 +2,16 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar'
 import ItemListContainer from './container/ItemListContainer'
-import HomePage from './components/HomePage'
-import ProductsPage from './components/ProductsPage'
+import HomePage from './container/homePage/HomePage'
+import ProductsPage from './container/productsPage/ProductsPage'
+import AppRouter from './container/AppRouter/AppRouter';
 
 function App() {
     return ( < div className = "App" >
-        <Router>
         <NavBar/>
-        <ItemListContainer/>
+        <AppRouter/>
 
-        <Switch>
-
-            <Route exact path="/">
-            <HomePage/>
-            </Route>
-
-            <Route path='/productos'>
-                <ProductsPage/>
-            </Route>
-
-        </Switch>
-
-        </Router> </div >
+    </div >
 
     );
 }

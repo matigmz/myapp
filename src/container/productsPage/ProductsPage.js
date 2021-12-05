@@ -1,9 +1,10 @@
 import React from 'react'
+import ItemListContainer from '../ItemListContainer'
 
 export default function ProductsPage() {
     return (
         <div>
-            <h1>productos</h1>
+            <ItemListContainer/>
         </div>
     )
 }

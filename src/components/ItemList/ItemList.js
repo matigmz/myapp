@@ -5,8 +5,8 @@ const ItemList = ({products}) => {
     console.log(products)
     return (
         <div>
-            {products.map ( product => {
-                return <Item products = {product}/>
+            {products.map ( products => {
+                return <Item products = {products}/>
             })}
         </div>
     )
