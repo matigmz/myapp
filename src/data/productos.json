@@ -67,9 +67,10 @@
   "computadoras": [
     {
       "id": 1,
-      "marca": "some comment",
-      "precio": "",
-      "detalles":[]
+      "marca": "Ryzen 3200G",
+      "imagen": "https://spacegamer.com.ar/img/Public/1058-producto-bionic3200-5945.jpg",
+      "precio": "65.000",
+      "detalles":["Aerocool Bionic", "Ryzen 3200G", "8Gb", "240Ssd", "Cylon 600w"]
     }
   ]
   
